@@ -3,13 +3,19 @@ import './globals.css';
 import Navbar from './components/Navbar'; 
 import Drawer from './components/Drawer'; 
 import { Inter } from 'next/font/google';
+import { Great_Vibes } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
+const greatVibes = Great_Vibes({ 
+  subsets: ['latin'], 
+  weight: '400',
+  variable: '--font-vibes' 
+});
 
 export default function RootLayout({children,}: {children: React.ReactNode}) {
   return (
     <html lang="en">
-     <body className={inter.className}>
+     <body className={greatVibes.variable}>
         <Navbar />
         <Drawer />
         <div style={{ 
