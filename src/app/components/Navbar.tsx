@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Navbar() {
   return (
     <nav
-      className="fixed-top w-100 bg-dark text-white border-bottom border-secondary"
+      className="fixed-top w-100 bg-transparent text-white"
       style={{ height: "70px",  zIndex: 1050, }} >
       <Container fluid className="h-100 d-flex align-items-center justify-content-between px-4">
         <div className="d-flex align-items-center gap-2">
@@ -20,12 +20,12 @@ export default function Navbar() {
             className="rounded-circle overflow-hidden border-2 border-secondary position-relative"
             style={{ width: "45px", height: "45px", cursor: "pointer" }}
           >
-            <Image 
+            {/* <Image 
               src="/Profile/joe.jpg" 
               alt="Profile"
               fill
               style={{ objectFit: "cover" }}
-            />
+            /> */}
           </div>
         </div>
       </Container>

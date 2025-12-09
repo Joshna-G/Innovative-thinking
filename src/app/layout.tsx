@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.css';
 import Navbar from './components/Navbar'; 
-import Drawer from './components/Drawer'; 
+import Drawer from './components/BottomNav'; 
 import { Inter } from 'next/font/google';
 import { Great_Vibes } from 'next/font/google';
 
@@ -19,8 +19,6 @@ export default function RootLayout({children,}: {children: React.ReactNode}) {
         <Navbar />
         <Drawer />
         <div style={{ 
-          marginTop: "70px", 
-          marginLeft: "70px", 
           minHeight: "calc(100vh - 70px)",
           padding: "20px"
         }}>

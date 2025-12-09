@@ -2,10 +2,7 @@
 import { motion } from "framer-motion";
 import { Great_Vibes } from 'next/font/google';
 
-const greatVibes = Great_Vibes({ 
-  subsets: ['latin'], 
-  weight: '400',
-});
+// ... (Imports and Fonts remain same)
 
 interface DoubleHeartFrameProps {
   image1: string; 
@@ -16,14 +13,15 @@ export default function DoubleHeartFrame({ image1, image2 }: DoubleHeartFramePro
   const elegantHeartPath = "M140,20 C73,20 20,74 20,140 C20,275 156,310 248,408 C350,310 496,275 496,140 C496,74 443,20 376,20 C318,20 282,55 258,85 C234,55 198,20 140,20 Z";
 
   return (
-    <div className="position-relative d-inline-block" style={{ width: "600px", maxWidth: "100%" }}>
+    // UPDATED: Added maxWidth: "100%" and padding to prevent cut-off on small screens
+    <div className="position-relative d-inline-block" style={{ width: "600px", maxWidth: "100%", padding: "10px" }}>
       <motion.svg 
         viewBox="0 0 800 600" 
         xmlns="http://www.w3.org/2000/svg"
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
-        style={{ overflow: "visible" }} 
+        style={{ width: "100%", height: "auto", overflow: "visible" }} // UPDATED: Responsive sizing
       >
         <defs>
           <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
