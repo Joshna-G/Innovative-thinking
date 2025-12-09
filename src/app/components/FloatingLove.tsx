@@ -21,7 +21,13 @@ export default function FloatingLove() {
   }, []);
 
   return (
-    <div className="position-absolute top-0 start-0 w-100 h-100 overflow-hidden" style={{ zIndex: 0, pointerEvents: "none" }}>
+    <div 
+      className="position-fixed top-0 start-0 w-100 h-100 overflow-hidden" 
+      style={{ 
+        zIndex: 0, 
+        pointerEvents: "none" 
+      }}
+    >
       {elements.map((el) => (
         <motion.div
           key={el.id}

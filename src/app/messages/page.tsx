@@ -5,6 +5,7 @@ import Envelope from "../components/Envelope";
 import SplashCursor from "../components/SplashCursor";
 import VintagePaper from "../components/VintagePaper"; 
 import { AnimatePresence, motion } from "framer-motion";
+import FloatingLove from "../components/FloatingLove"; 
 
   const messages = [
     {
@@ -160,6 +161,7 @@ export default function MessagePage() {
 
   return (
     <main className="min-vh-100 position-relative pb-5" style={{ backgroundColor: "#1a1a1a" }}>
+      <FloatingLove />
       <SplashCursor />
       <Container className="pt-5">
         <motion.h1 
