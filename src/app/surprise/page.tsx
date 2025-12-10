@@ -5,6 +5,8 @@ import BottomNav from "../components/BottomNav";
 import GiftBox from "../components/GiftBox";
 import { Container, Row, Col } from "react-bootstrap";
 import { Great_Vibes } from 'next/font/google';
+import FloatingLove from "../components/FloatingLove"; 
+import SplashCursor from "../components/SplashCursorSmokey";
 
 const greatVibes = Great_Vibes({ 
   subsets: ['latin'], 
@@ -37,6 +39,8 @@ export default function SurprisePage() {
         overflowX: "hidden" 
       }}
     >
+      <SplashCursor />
+      <FloatingLove />
       <AnimatePresence>
         {selectedId && (
           <motion.div

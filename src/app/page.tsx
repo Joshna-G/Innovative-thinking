@@ -51,6 +51,7 @@ export default function Home() {
         minHeight: "calc(100vh - 70px)", 
         overflow: "hidden", 
         backgroundColor: "#1a1a1a",   
+        paddingBottom: "50px"
       }}
     >
       <SplashCursor />
