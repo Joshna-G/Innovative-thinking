@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import BottomNav from "../components/BottomNav";
 import Carousel3D from "../components/Carousel3D";
 import FloatingLove from "../components/FloatingLove"; 
-import SplashCursor from "../components/SplashCursor";
 
 export default function VideosPage() {
   return (
@@ -11,7 +10,6 @@ export default function VideosPage() {
       className="vh-100 w-100 bg-black position-relative overflow-hidden d-flex flex-column"
       style={{ paddingBottom: "100px" }}
     >
-        <SplashCursor />
         <FloatingLove />
         <div className="position-absolute top-50 start-50 translate-middle rounded-circle opacity-25"
              style={{ width: "600px", height: "600px", background: "radial-gradient(circle, #dc3545 0%, transparent 70%)", filter: "blur(100px)" }} />
